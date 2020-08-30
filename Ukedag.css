@@ -1,0 +1,47 @@
+#datoukedag {
+    font-family: Courier, Verdana, "Times New Roman", sans-serif;
+    color: #ffffff;
+    background-color: #6ab7ff
+}
+
+i {
+    border: solid #ffffff;
+    border-width: 0 4pt 4pt 0;
+    display: inline-block;
+    padding: 5pt;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+p {
+    font-size: 1em;
+    align-self: stretch;
+    text-align: center;
+}
+
+h1 {
+   text-align: center;
+}
+
+#Ddate, input {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: inherit;
+    display: block;
+    margin : 0 auto;
+}
+
+body {
+    max-width:8000px;
+    height:auto;
+    max-height:100%;
+    margin: 0 auto;
+    width: 70vw;
+    background-color: #1f98e5;
+    /*border:1px solid black;
+    padding-top: 1em;*/
+}
