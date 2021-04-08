@@ -1,1 +1,1 @@
-(/Ukedag.html)
+[UkedagKalkulator](/Ukedag.html)
