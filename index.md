@@ -1,1 +1,1 @@
-<a href=Ukedag.html> Test </a>
+(/Ukedag.html)
