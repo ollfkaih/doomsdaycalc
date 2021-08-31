@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Ukedag</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="utf-8">
     <link rel="stylesheet" href="Ukedag.css">
     <!--<script type="text/javascript" src="Ukedag.js"></script> -->
 </head>
 <body onload="changedef(),calc()">
     <div class="wrapper">
-    <!--<p>(Funker nå gitt)</p>-->
+    <!--<p>(Funker nÃ¥ gitt)</p>-->
     <h1>Dato <i class="arrow right"></i> Ukedag</h1>
     <p>Skriv en dato:</p>
     <input id="Ddate" type="date" autofocus="true" onchange="calc()"/>
@@ -27,14 +27,14 @@
             newDate = date.split('-').reverse().join('.'),
             year = newDate.substr(newDate.length - 4, 4),
             month = newDate.substr(newDate.length - 7, 2),
-            day = newDate.substr(newDate.length - 10, 2), //Bruk parseInt for å fjerne 0-er foran januar-sept.
+            day = newDate.substr(newDate.length - 10, 2), //Bruk parseInt for Ã¥ fjerne 0-er foran januar-sept.
             lyear = false;
         
-        //Sjekk skuddår
+        //Sjekk skuddÃ¥r
 		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) ){
             var lyear = true
         }
-        //Sjekk århundre
+        //Sjekk Ã¥rhundre
         var century = year.substr(year.length - 4, 2)
 		
         while (century >=4)
@@ -51,7 +51,7 @@
             var a = 3;
         }
         
-        //Del siste to sifferene i året på 12
+        //Del siste to sifferene i Ã¥ret pÃ¥ 12
         var aartoos = year.substr(year.length -2,2)
         var b = Math.floor(aartoos/12);
         var c = aartoos % 12;
@@ -65,7 +65,7 @@
             e = Math.floor(e - 7)
         }
         
-        //Finn måneden 
+        //Finn mÃ¥neden 
         var dday = Number
         if (month == 1 && lyear == true) {
             dday = 4
@@ -103,7 +103,7 @@
         var dayNum = Math.floor(e+diff)
         
         
-        //Del på 7 for å unngå overflow
+        //Del pÃ¥ 7 for Ã¥ unngÃ¥ overflow
         while (dayNum > 6) {
         dayNum = Math.floor(dayNum-7);
         }
@@ -129,9 +129,9 @@
         } else if (dayNum == 5) {
             dayOfWeek = "fredag"
         } else if (dayNum == 6) {
-            dayOfWeek = "l�rdag"
+            dayOfWeek = "lørdag"
         } else if (dayNum == 0) {
-            dayOfWeek = "s�ndag"
+            dayOfWeek = "søndag"
         }
     
         //Fortid eller fremtid?        
