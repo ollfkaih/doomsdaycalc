@@ -102,9 +102,9 @@ window.onload = function(calc) {
         } else if (dayNum == 5) {
             dayOfWeek = "fredag"
         } else if (dayNum == 6) {
-            dayOfWeek = "l&#xF8rdag"
+            dayOfWeek = "lørdag"
         } else if (dayNum == 0) {
-            dayOfWeek = "s&#xF8ndag"
+            dayOfWeek = "søndag"
         }
     
         
